@@ -1,20 +1,55 @@
 .App {
   height: 500px;
-  max-width: 1000px;
+  max-width: 800px;
   margin: auto;
   margin-top: 50px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .header {
-  background-color: #D3D3D3;
+  background-color: #808080;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
   color: #fff;
   border-radius: 20px 20px 0px 0px;
+  font-weight: 600;
 }
 
 .header--logo {
   height: 50px;
+}
+
+.container {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 20px;
+  padding: 50px;
+  background: #ECECEC;
+  border-radius: 0px 0px 20px 20px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    grid-template: 40px 40px / 1fr;
+  }
+}
+
+.input {
+  border-radius: 7px;
+  border: 1px solid #808080;
+  text-indent: 5px;
+  font-weight: 600;
+}
+
+.get-button {
+  grid-column: 1 / -1;
+  height: 40px;
+  border-radius: 7px;
+  background: #808080;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
 }
